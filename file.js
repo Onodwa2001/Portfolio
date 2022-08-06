@@ -38,22 +38,15 @@ Array.from(topics).forEach((element, index, arr) => {
     });
 });
 
+let value = document.getElementsByClassName('technology');
 
 document.getElementById('show-skills').addEventListener('click', (e) => {
     // location.reload();
     location.href = 'index.html#skills';
 
-    Array.from(technology).forEach(element => {
+    Array.from(technology).forEach((element, index, arr) => {
         element.style.display = 'block';
+        // value.innerText = value.style.width;
     });
 });
 
-
-// let imageNames = ['myPic.jpg', 'mountain.jpg', 'colby-thomas-r6TLRDY4Ll0-unsplash.jpg'];
-
-// let i = 0;
-
-// setInterval(() => {
-//     image.src = `images/${imageNames[i++ % imageNames.length]}`;
-//     image.style.transition = '0.3s';
-// }, 2000);
