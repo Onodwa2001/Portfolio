@@ -1,0 +1,281 @@
+/* @import url('http://fonts.cdnfonts.com/css/brittany-signature'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: monospace, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* body {
+
+} */
+
+@keyframes bounce {
+    0% {transform: translateY(0px);}
+    25% {transform: translateY(-8px);}
+    50% {transform: translateY(-10px);}
+    75% {transform: translateY(-1px);}
+    100% {transform: translateY(0px);}
+}
+
+#logo {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.logo h3 {
+    /* color: white; */
+    font-family: 'Brittany Signature', sans-serif;
+    /* font-size: 10px; */
+    margin-left: 200px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 0 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+header {
+    height: 80vh;
+    /* background-color: rgb(133, 133, 198); */
+    background-color: rgb(255, 250, 250);
+    background: linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/colby-thomas-r6TLRDY4Ll0-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text h1 {
+    font-weight: lighter;
+}
+
+.links ul {
+    margin-right: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links ul li {
+    list-style: none;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.intro {
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 170px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: rgb(70, 70, 70);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes resizeImage {
+    25% {transform: scale(0.0);}
+    50% {transform: scale(1.2);}
+    75% {transform: scale(0.4);}
+    100% {transform: scale(1);}
+}
+
+.image img {
+    animation-name: resizeImage;
+    animation-duration: 1s;
+    border-radius: 50%;
+    border: solid white 7px;
+}
+
+.image img {
+    border-radius: 50%;
+    border: solid white 7px;
+}
+
+.image-container {
+    width: 40%;
+    margin-left: auto;
+    margin-right: end;
+}
+
+@keyframes headingMove {
+    from {transform: translateX(-500px);}
+    to {transform: translateX(0px);}
+}
+
+@keyframes moveBackground {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.text-wrap {
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    animation-name: moveBackground;
+    animation-duration: 1.5s;
+}
+
+.text-wrap h1 {
+    animation-name: headingMove;
+    animation-duration: .5s;
+}
+
+.text-wrap h3 {
+    animation-name: headingMove;
+    animation-duration: 1s;
+}
+
+.text-wrap p {
+    margin-top: 8px;
+    animation-name: headingMove;
+    animation-duration: 1.5s;
+}
+
+main {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+section {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.prac {
+    overflow: hidden;
+}
+
+.topics {
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    gap: 20px;
+    margin-top: 40px;
+    z-index: 0;
+}
+
+.topics .topic {
+    padding: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.topic p {
+    /* display: none; */
+    visibility: hidden;
+}
+
+.topic:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+.skill-tab-wrapper {
+    background-color: rgb(194, 194, 194);
+    height: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.technology {
+    background-color: black;
+    height: fit-content;
+    text-align: end;
+    color: white;
+    display: none;
+}
+
+@keyframes skill {
+    0% {width: 0%;}
+    100% {width: 70%;}
+}
+
+#tech1 {
+    width: 70%;
+    animation-name: skill;
+    animation-duration: 2s;
+}
+
+@keyframes skill2 {
+    0% {width: 0%;}
+    100% {width: 88%;}
+}
+
+#tech2 {
+    width: 88%;
+    animation-name: skill2;
+    animation-duration: 2s;
+}
+
+@keyframes skill3 {
+    0% {width: 0%;}
+    100% {width: 78%;}
+}
+
+#tech3 {
+    width: 78%;
+    animation-name: skill3;
+    animation-duration: 2s;
+}
+
+@keyframes skill4 {
+    0% {width: 0%;}
+    100% {width: 60%;}
+}
+
+#tech4 {
+    width: 60%;
+    animation-name: skill4;
+    animation-duration: 2s;
+}
+
+@keyframes skill5 {
+    0% {width: 0%;}
+    100% {width: 76%;}
+}
+
+#tech5 {
+    width: 76%;
+    animation-name: skill5;
+    animation-duration: 2s;
+}
+
+@keyframes skill6 {
+    0% {width: 0%;}
+    100% {width: 90%;}
+}
+
+#tech6 {
+    width: 90%;
+    animation-name: skill6;
+    animation-duration: 2s;
+}
+
+
+
+#show-skills {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: rgb(10, 133, 166);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+#show-skills:hover {
+    opacity: 0.6;
+    transition: .3s;
+}
