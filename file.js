@@ -10,7 +10,7 @@ let technology = document.getElementsByClassName('technology');
 
 window.onscroll = (e) => {
     if (window.scrollY >= 1) {
-        nav.style.backgroundColor = 'rgb(10, 133, 166)';
+        nav.style.backgroundColor = 'rgb(77, 77, 240)';
         nav.style.boxShadow = '0 4px 4px 0 rgba(0, 0, 0, 0.2)';
         nav.style.color = 'white';
         nav.style.transition = '0.3s';
@@ -50,3 +50,5 @@ document.getElementById('show-skills').addEventListener('click', (e) => {
     });
 });
 
+
+// STUFF

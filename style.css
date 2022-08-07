@@ -5,6 +5,7 @@
     margin: 0;
     font-family: monospace, sans-serif;
     scroll-behavior: smooth;
+    font-weight: lighter
 }
 
 /* body {
@@ -160,15 +161,18 @@ header {
 }
 
 #contact-button {
-    padding: 8px; 
-    background-color: rgb(51, 191, 51);
-    border: none;
-    color: white;
+    padding: 13px;
     cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(77, 77, 240);
+    color: white;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #contact-button:hover {
-    opacity: .7;
+    box-shadow: none;
+    transform:translateY(6px);
     transition: .3s;
 }
 
@@ -249,7 +253,7 @@ section {
 
 
 .technology {
-    background-color: black;
+    background-color: rgb(41, 41, 121);
     height: fit-content;
     text-align: end;
     color: white;
@@ -326,15 +330,18 @@ section {
 
 #show-skills {
     margin-top: 30px;
-    padding: 12px;
-    background-color: rgb(10, 133, 166);
-    border: none;
-    color: white;
+    padding: 13px;
     cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(77, 77, 240);
+    color: white;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #show-skills:hover {
-    opacity: 0.6;
+    box-shadow: none;
+    transform:translateY(6px);
     transition: .3s;
 }
 
@@ -357,7 +364,8 @@ section {
 
 .services-wrapper .service:hover {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
-    transition: .2s;
+    transform: scale(1.1);
+    transition: .15s;
 }
 
 .text {
@@ -370,4 +378,128 @@ section {
 
 .icon {
     margin-top: 30px;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 15px;
+}
+
+.projects .project {
+    padding: 20px;
+    border-bottom: solid rgb(161, 16, 16) 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.projects .project:hover {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: .15s;
+}
+
+.project button {
+    padding: 13px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    background-color: rgb(77, 77, 240);
+    color: white;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.project button:hover {
+    box-shadow: none;
+    transform:translateY(6px);
+    transition: .3s;
+}
+
+
+/* ALIGN FORM ITEMS AS GRID */
+
+
+.form-wrapper input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    outline: none;
+}
+
+.form-wrapper textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: rgb(77, 77, 240);
+    border: none;
+    color: white;
+    border-radius: 130px;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+form button:hover {
+    box-shadow: none;
+    transform:translateY(6px);
+    transition: .3s;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+
+.contact div {
+    margin: 20px;
+}
+
+.contact .email {
+    margin-left: 0;
+}
+
+.contact .email input {
+    outline: none;
+}
+
+form input:focus {
+    /* outline: none; */
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    transition: .2s;
+}
+
+.contact .email input:focus {
+    /* outline: none; */
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    transition: .2s;
+}
+
+.contact .phone input:focus {
+    /* outline: none; */
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    transition: .2s;
+}
+
+form textarea textarea:focus {
+    /* outline: none; */
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    transition: .2s;
+}
+
+.contact .phone {
+    margin-right: 0;
+}
+
+.contact .phone input {
+    outline: none;
 }
